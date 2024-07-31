@@ -5,3 +5,18 @@
 .ds-button-white {
     @apply uppercase text-brand-white;
 }
+
+.ds-button-download{
+    @apply w-[250px] py-[10px] px-[50px] justify-center items-center gap-[10px] border-[1px] rounded-[5px] border-brand-green hover:bg-brand-green hover:text-brand-white duration-500;
+}
+
+.ds-section--two-col-overlapping{
+    background: linear-gradient(
+        to bottom,
+        white 64px,
+        rgba(88, 89, 67, 0.1) 64px,
+        rgba(88, 89, 67, 0.1) calc(100% - 64px),
+        white 64px
+
+    );
+}
