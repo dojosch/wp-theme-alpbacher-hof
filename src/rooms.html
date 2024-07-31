@@ -9,31 +9,32 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
         <script>
             document.addEventListener("DOMContentLoaded", function() { 
-                const buttons = document.querySelectorAll('.ds-button-white-filter');
-                const cards = document.querySelectorAll('.room-cards');
-                
-                buttons.forEach((button) => {
-                    button.addEventListener('click', (e) => {
-                        cards.forEach((card) => {
-                        if (button.dataset.category == -1)  
-                        {
-                            card.classList.remove('hidden');
-                        }  
-                        else if(card.dataset.category!=button.dataset.category)
-                        {
-                            card.classList.add('hidden');
-                        }
-                        else
-                        {
-                            card.classList.remove('hidden')
-                        }
-                        
-                        
-                        })
-                    });
-                })
-            });
-
+    const buttons = document.querySelectorAll('.ds-button-white-filter');
+    const cards = document.querySelectorAll('.room-cards');
+    buttons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            const isActive = button.classList.contains('ds-button-active');
+            // Entferne die 'ds-button-active' Klasse von allen Buttons
+            buttons.forEach((btn) => btn.classList.remove('ds-button-active'));
+            if (isActive) {
+                // Wenn der Button bereits aktiv ist, setze ihn zurück und zeige alle Karten
+                cards.forEach((card) => card.classList.remove('hidden'));
+            } else {
+                // Andernfalls setze die 'ds-button-active' Klasse und filtere die Karten
+                button.classList.add('ds-button-active');
+                cards.forEach((card) => {
+                    if (button.dataset.category == -1) {
+                        card.classList.remove('hidden');
+                    } else if (card.dataset.category != button.dataset.category) {
+                        card.classList.add('hidden');
+                    } else {
+                        card.classList.remove('hidden');
+                    }
+                });
+            }
+        });
+    });
+});
         </script>
     </head>
     <body>
