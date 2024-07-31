@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ds-button-white {
+    @apply uppercase text-brand-white;
+}

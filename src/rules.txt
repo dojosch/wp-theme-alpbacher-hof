@@ -1,0 +1,21 @@
+Aufbau
+
+1. Das äußerste Element ist immer eine <section></section>
+2. Die Section hat immer die Klasse ds-section und die Klasse ds-section--sectionname (sectionname natürlich ersetzen)
+3. Die Section enthält alle Paddings & Margins zur nächsten Section & die Backgrounds
+4. Innerhalb der Section ist immer ein .container mit .mx-auto und kein ml/mr, sofern wir nichts anderes besprechen
+5. Dann kommt der Code
+
+---
+
+Ablauf
+
+1. Main auschecken
+2. Main pullen
+3. Eigenen Branch erstellen feature/section-name
+4. Worki - alles, was ihr im ersten Schritt nicht schafft, einfach kommentieren
+5. Alles adden, comitten, pushen (Gerne auf öfter)
+6. Pull-Request erstellen und Dominik als Reviewer setzen
+7. Discord-Nachricht in cust-alpbacherhof mit dem Link zum PR und der bitte um Review
+8. Während warten auf den Review, gerne nächste Section machen
+
