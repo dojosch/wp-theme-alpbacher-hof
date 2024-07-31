@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./tailwind-compiled.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() { 
+                const buttons = document.querySelectorAll('.ds-button-white-filter');
+                const cards = document.querySelectorAll('.room-cards');
+                
+                buttons.forEach((button) => {
+                    button.addEventListener('click', (e) => {
+                        cards.forEach((card) => {
+                        if (button.dataset.category == -1)  
+                        {
+                            card.classList.remove('hidden');
+                        }  
+                        else if(card.dataset.category!=button.dataset.category)
+                        {
+                            card.classList.add('hidden');
+                        }
+                        else
+                        {
+                            card.classList.remove('hidden')
+                        }
+                        
+                        
+                        })
+                    });
+                })
+            });
+
+        </script>
+    </head>
+    <body>
+        <section class="ds-section ds-section--rooms bg-brand-green py-[100px] mb-[118px]">
+            <div class="mx-auto container">
+
+            <div class="text-center">
+                <h1 class="text-[35px] font-medium
+                           leading-[45px] tracking-[1.75px]
+                           text-brand-white
+                           mb-[40px]">
+                    Finde dein Lieblingszimmer
+                </h1>
+                <h2 class="font-sans text-[18px]
+                           font-medium leading-[30px]
+                           tracking-[0.9px] text-brand-white
+                           mb-[40px]">
+                    Großzügig geschnitten, wachgeküsst von der Sonne und dem Blick auf die Berge? Oder doch <br>
+                    lieber kuschelig, auf der Dorfseite und mit Aussicht auf die Gratlspritz? Egal wofür du dich <br>
+                    entscheidest: Wir geben deinem Urlaub eine Heimat bei uns im Alpbacherhof. Heißt es für dich: <br>
+                    Du fühlst dich genauso wohl wie in deinen eigenen vier Wänden.
+                </h2>
+            </div>                
+                <div class="flex flex-row justify-evenly">
+                    <div>
+                        <button data-category="-1" class="ds-button-white-filter ds-button-white">
+                            Alle
+                        </button>
+                    </div>
+                    <div>
+                        <button data-category="1" class="ds-button-white-filter ds-button-white">
+                            Doppelzimmer
+                        </button>
+                    </div>
+                    <div>
+                        <button class="ds-button-white-filter ds-button-white">
+                            Einzelzimmer
+                        </button class="ds-button-white-filter ds-button-white">
+                    </div>
+                    <div>
+                        <button class="ds-button-white-filter ds-button-white">
+                            Familienzimmer
+                        </button>
+                    </div>
+                    <div>
+                        <button class="ds-button-white-filter ds-button-white">
+                            Suite
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="ds-section ds-section--rooms bg-brand-white pb-[158px]">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-2 gap-[98px]">
+                    <!--Room Card-->
+                    <div class="text-center text-brand-gray-dark mb-[108px]
+                    room-cards" data-category="1">
+                        <img src="suitepanorama.png" alt="Panorama Suite"
+                             class="mb-[57px] block mx-auto">
+                        <h2 class="font-sans text-[20px]
+                                    font-medium uppercase
+                                    leading-[28px] tracking-[3px]">
+                            suite Panorama
+                        </h2>
+                        <h1  class="text-sans text-[45px]
+                                    font-medium leading-[55px]
+                                    tracking-[2.25px] mb-[40px]
+                                    uppercase">
+                            suite panorama 
+                            
+                        </h1>
+                        <p class="font-sans text-[18px]
+                                  font-medium leading-[30px]
+                                  tracking-[0.9px] mb-[20px]">
+                            Großzügig und unendlich frei. Schlafzimmer, gemütliches<br>
+                            Wohnzimmer, großzügiges Badezimmer und ein traumhafter<br>
+                            Balkon. Genieße den atemberaubenden, freien Blick in die Natur.
+                        </p>
+                        <p class="font-sans text-[18px]
+                                  font-bold">
+                            44 m² | bis zu 2 Person(en) | ab € 216 
+                        </p>
+                        <p class="text-[16px] leading-[25px]
+                                  tracking-[0.8px] font-medium">
+                            (Direktbucher berücksichtigt) <br>
+                            pro Perosn & Nacht mit Gourmetpension
+                        </p>
+                        <a href="#"
+                           class="underline decoration-brand-green
+                                  text-brand-green text-[14px]
+                                  font-semibold leading-[20px]
+                                  tracking-[2.8px] uppercase
+                                  hover:decoration-brand-yellow transition
+                                  hover:text-brand-yellow duration-500">
+                            Details
+                        </a>
+                    </div>
+                    <!--Room Card End-->
+                    <!--Room Card-->
+                    <div class="text-center text-brand-gray-dark mb-[108px]
+                    room-cards" data-category="1">
+                        <img src="familiensuitepanorama.png" alt="Panorama Suite"
+                             class="mb-[57px] block mx-auto">
+                        <h2 class="font-sans text-[20px]
+                                    font-medium uppercase
+                                    leading-[28px] tracking-[3px]">
+                                Familiensuite Panorama
+                        </h2>
+                        <h1  class="text-sans text-[45px]
+                                    font-medium leading-[55px]
+                                    tracking-[2.25px] mb-[40px]
+                                    uppercase">
+                                Familiensuite Panorama
+                        </h1>
+                        <p class="font-sans text-[18px]
+                                  font-medium leading-[30px]
+                                  tracking-[0.9px] mb-[20px]">
+                                Familienzeit trifft auf Privatsphäre. Die charmante Familiensuite<br>
+                                gibt euch Raum und Weite. Und lässt euch doch gemeinsam<br>
+                                träumen: mit Blick auf das Tiroler Alpenpanorama.
+                        </p>
+                        <p class="font-sans text-[18px]
+                                  font-bold">
+                                52 m² | bis zu 2-5 Person(en) | ab € 207
+                        </p>
+                        <p class="text-[16px] leading-[25px]
+                                  tracking-[0.8px] font-medium">
+                            (Direktbucher berücksichtigt) <br>
+                            pro Perosn & Nacht mit Gourmetpension
+                        </p>
+                        <a href="#"
+                           class="underline decoration-brand-green
+                                  text-brand-green text-[14px]
+                                  font-semibold leading-[20px]
+                                  tracking-[2.8px] uppercase
+                                  hover:decoration-brand-yellow transition
+                                  hover:text-brand-yellow duration-500">
+                            Details
+                        </a>
+                    </div>
+                    <!--Room Card End-->
+                    <!--Room Card-->
+                    <div class="text-center text-brand-gray-dark
+                    room-cards">
+                        <img src="wohnkomfortzirbe.png" alt="Panorama Suite"
+                             class="mb-[57px] block mx-auto">
+                        <h2 class="font-sans text-[20px]
+                                    font-medium uppercase
+                                    leading-[28px] tracking-[3px]">
+                                WOHNKOMFORTZIMMER ZIRBE
+                        </h2>
+                        <h1  class="text-sans text-[45px]
+                                    font-medium leading-[55px]
+                                    tracking-[2.25px] mb-[40px]
+                                    uppercase">
+                                WOHNKOMFORTZIMMER <br> ZIRBE
+                        </h1>
+                        <p class="font-sans text-[18px]
+                                  font-medium leading-[30px]
+                                  tracking-[0.9px] mb-[20px]">
+                                Das Zimmer mit der Kraft der Zirbe. Für Wohlbefinden und<br>
+                                tiefen Schlaf. Schon beim Eintreten erfasst dich der Duft des<br>
+                                heimischen Zirmholzes, dessen Wirkung nachhaltig spürbar ist.
+                        </p>
+                        <p class="font-sans text-[18px]
+                                  font-bold">
+                                36 m² | bis zu 3 Person(en) | ab € 202
+                        </p>
+                        <p class="text-[16px] leading-[25px]
+                                  tracking-[0.8px] font-medium">
+                            (Direktbucher berücksichtigt) <br>
+                            pro Perosn & Nacht mit Gourmetpension
+                        </p>
+                        <a href="#"
+                           class="underline decoration-brand-green
+                                  text-brand-green text-[14px]
+                                  font-semibold leading-[20px]
+                                  tracking-[2.8px] uppercase
+                                  hover:decoration-brand-yellow transition
+                                  hover:text-brand-yellow duration-500">
+                            Details
+                        </a>
+                    </div>
+                    <!--Room Card End-->
+                    <!--Room Card-->
+                    <div class="text-center text-brand-gray-dark
+                    room-cards">
+                        <img src="doppelzimmerdeluxe.png" alt="Panorama Suite"
+                             class="mb-[57px] block mx-auto">
+                        <h2 class="font-sans text-[20px]
+                                    font-medium uppercase
+                                    leading-[28px] tracking-[3px]">
+                                    DOPPELZIMMER DELUXE
+                        </h2>
+                        <h1  class="text-sans text-[45px]
+                                    font-medium leading-[55px]
+                                    tracking-[2.25px] mb-[40px]
+                                    uppercase">
+                                    Wohnkomfortzimmer <br>
+                                    Naturblick
+                        </h1>
+                        <p class="font-sans text-[18px]
+                                  font-medium leading-[30px]
+                                  tracking-[0.9px] mb-[20px]">
+                                  Natürlichkeit und Luxus. In perfekter Harmonie. Morgens küsst<br>
+                                  dich die Sonne wach. Abends schläfst du mit Blick auf das<br>
+                                  Bergpanorama ein. Ein Gefühl von tiefster Geborgenheit.
+                        </p>
+                        <p class="font-sans text-[18px]
+                                  font-bold">
+                                44 m² | bis zu 3 Person(en) | ab € 198 
+                        </p>
+                        <p class="text-[16px] leading-[25px]
+                                  tracking-[0.8px] font-medium">
+                            (Direktbucher berücksichtigt) <br>
+                            pro Perosn & Nacht mit Gourmetpension
+                        </p>
+                        <a href="#"
+                           class="underline decoration-brand-green
+                                  text-brand-green text-[14px]
+                                  font-semibold leading-[20px]
+                                  tracking-[2.8px] uppercase
+                                  hover:decoration-brand-yellow transition
+                                  hover:text-brand-yellow duration-500">
+                            Details
+                        </a>
+                    </div>
+                    <!--Romm Card End-->
+                </div>
+
+            </div>
+        </section>
+    </body>
+</html>
