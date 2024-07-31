@@ -12,3 +12,14 @@
     hover:bg-brand-white transition
     hover:text-brand-green duration-500;
 }
+
+.ds-button-green {
+    @apply text-brand-green font-sans
+    text-[14px] font-semibold
+    leading-[20px] tracking-[2.8px]
+    uppercase py-[10px]
+    px-[20px] border 
+    border-brand-green rounded-[5px]
+    hover:bg-brand-green transition
+    hover:text-brand-white duration-500;
+}
