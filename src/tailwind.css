@@ -7,7 +7,7 @@
 }
 
 .ds-button-download{
-    @apply w-[250px] py-[10px] px-[50px] justify-center items-center gap-[10px] border-[1px] rounded-[5px] border-brand-green hover:bg-brand-green hover:text-brand-white duration-500;
+    @apply w-[250px] py-[10px] px-[50px] justify-center uppercase tracking-[2px] font-medium items-center gap-[10px] border-[1px] rounded-[5px] border-brand-green hover:bg-brand-green hover:text-brand-white duration-500;
 }
 
 .ds-section--two-col-overlapping{
