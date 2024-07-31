@@ -11,6 +11,7 @@ module.exports = {
       'brand-black': '#000000',
       'brand-white': '#ffffff',
       'brand-gray-dark': '#55585C',
+      'brand-transparent': 'transparent',
     },
     fontFamily: {
 			'sans': ['Quicksand', 'sans-serif'],

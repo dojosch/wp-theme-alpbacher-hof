@@ -41,7 +41,7 @@
         <section class="ds-section ds-section--rooms bg-brand-green py-[100px] mb-[118px]">
             <div class="mx-auto container">
 
-            <div class="text-center">
+            <div class="text-left">
                 <h1 class="text-[35px] font-medium
                            leading-[45px] tracking-[1.75px]
                            text-brand-white
@@ -93,8 +93,20 @@
                     <!--Room Card-->
                     <div class="text-center text-brand-gray-dark mb-[108px]
                     room-cards" data-category="1">
+                    <div class="relative group">
                         <img src="suitepanorama.png" alt="Panorama Suite"
-                             class="mb-[57px] block mx-auto">
+                             class="mb-[57px] block mx-auto w-full h-full object-cover">
+                             <div class="w-full h-full absolute inset-0 bg-brand-green bg-opacity-75 flex items-center z-10 
+                             flex-row justify-evenly transition duration-500 opacity-0 group-hover:opacity-100">
+                                <button class="ds-button-white z-20">
+                                    Anfragen
+                                </button>
+                                <button class="ds-button-yellow">
+                                    Buchen
+                                </button>
+                            </div>
+                    </div>
+                        
                         <h2 class="font-sans text-[20px]
                                     font-medium uppercase
                                     leading-[28px] tracking-[3px]">
@@ -137,8 +149,20 @@
                     <!--Room Card-->
                     <div class="text-center text-brand-gray-dark mb-[108px]
                     room-cards" data-category="1">
+                    <div class="relative group">
                         <img src="familiensuitepanorama.png" alt="Panorama Suite"
-                             class="mb-[57px] block mx-auto">
+                        class="mb-[57px] block mx-auto object-cover w-full h-full">
+                        <div class="w-full h-full absolute inset-0 bg-brand-green bg-opacity-75 flex items-center z-10 
+                        flex-row justify-evenly transition duration-500 opacity-0 group-hover:opacity-100">
+                            <button class="ds-button-white">
+                                Anfragen
+                            </button>
+                            <button class="ds-button-yellow">
+                                Buchen
+                            </button>
+                        </div>
+                    </div>
+                       
                         <h2 class="font-sans text-[20px]
                                     font-medium uppercase
                                     leading-[28px] tracking-[3px]">
@@ -180,8 +204,20 @@
                     <!--Room Card-->
                     <div class="text-center text-brand-gray-dark
                     room-cards">
+                    <div class="relative group">
                         <img src="wohnkomfortzirbe.png" alt="Panorama Suite"
-                             class="mb-[57px] block mx-auto">
+                        class="mb-[57px] block mx-auto w-full h-full object-cover">
+                        <div class="w-full h-full absolute inset-0 bg-brand-green bg-opacity-75 flex items-center z-10 
+                        flex-row justify-evenly transition duration-500 opacity-0 group-hover:opacity-100">
+                            <button class="ds-button-white">
+                                Anfragen
+                            </button>
+                            <button class="ds-button-yellow">
+                                Buchen
+                            </button>
+                        </div>
+                    </div>
+                       
                         <h2 class="font-sans text-[20px]
                                     font-medium uppercase
                                     leading-[28px] tracking-[3px]">
@@ -223,8 +259,21 @@
                     <!--Room Card-->
                     <div class="text-center text-brand-gray-dark
                     room-cards">
-                        <img src="doppelzimmerdeluxe.png" alt="Panorama Suite"
-                             class="mb-[57px] block mx-auto">
+
+                        <div class="relative group">
+                            <img src="doppelzimmerdeluxe.png" alt="Panorama Suite"
+                            class="mb-[57px] block mx-auto w-full h-full object-cover">
+                            <div class="w-full h-full absolute inset-0 bg-brand-green bg-opacity-75 flex items-center z-10 
+                                        flex-row justify-evenly transition duration-500 opacity-0 group-hover:opacity-100">
+                                <button class="ds-button-white">
+                                    Anfragen
+                                </button>
+                                <button class="ds-button-yellow">
+                                    Buchen
+                                </button>
+                            </div>
+                        </div>
+                       
                         <h2 class="font-sans text-[20px]
                                     font-medium uppercase
                                     leading-[28px] tracking-[3px]">
@@ -259,7 +308,7 @@
                                   font-semibold leading-[20px]
                                   tracking-[2.8px] uppercase
                                   hover:decoration-brand-yellow transition
-                                  hover:text-brand-yellow duration-500">
+                                  hover:text-brand-yellow duration-500 ease-in">
                             Details
                         </a>
                     </div>
