@@ -5,3 +5,14 @@
 .ds-button-white {
     @apply uppercase text-brand-white;
 }
+
+.ds-section--two-col-overlapping-2{
+    background: linear-gradient(
+        to bottom,
+        white 64px,
+        rgba(88,89,67,0.1)64px,
+        rgba(88,89,67,0.1)calc(100%-64px),
+        white 64px
+
+    );
+}
