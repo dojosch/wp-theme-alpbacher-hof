@@ -9,25 +9,31 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
         <script>
             document.addEventListener("DOMContentLoaded", function() { 
-    const buttons = document.querySelectorAll('.ds-button-white-filter');
-    const cards = document.querySelectorAll('.room-cards');
-    buttons.forEach((button) => {
-        button.addEventListener('click', (e) => {
-            const isActive = button.classList.contains('ds-button-active');
+                    const buttons = document.querySelectorAll('.ds-button-white-filter');
+                    const cards = document.querySelectorAll('.room-cards');
+                buttons.forEach((button) => {
+                button.addEventListener('click', (e) => {
+                    const isActive = button.classList.contains('ds-button-active');
             // Entferne die 'ds-button-active' Klasse von allen Buttons
             buttons.forEach((btn) => btn.classList.remove('ds-button-active'));
-            if (isActive) {
+                if (isActive) {
                 // Wenn der Button bereits aktiv ist, setze ihn zurück und zeige alle Karten
                 cards.forEach((card) => card.classList.remove('hidden'));
-            } else {
-                // Andernfalls setze die 'ds-button-active' Klasse und filtere die Karten
-                button.classList.add('ds-button-active');
-                cards.forEach((card) => {
-                    if (button.dataset.category == -1) {
-                        card.classList.remove('hidden');
-                    } else if (card.dataset.category != button.dataset.category) {
+                } 
+                else 
+                {
+                    // Andernfalls setze die 'ds-button-active' Klasse und filtere die Karten
+                    button.classList.add('ds-button-active');
+                    cards.forEach((card) => {
+                if (button.dataset.category == -1) 
+                {
+                    card.classList.remove('hidden');
+                } 
+                else if (card.dataset.category != button.dataset.category) 
+                {
                         card.classList.add('hidden');
-                    } else {
+                } 
+                else {
                         card.classList.remove('hidden');
                     }
                 });
@@ -52,46 +58,38 @@
                            font-medium leading-[30px]
                            tracking-[0.9px] text-brand-white
                            mb-[40px]">
-                    Großzügig geschnitten, wachgeküsst von der Sonne und dem Blick auf die Berge? Oder doch <br>
-                    lieber kuschelig, auf der Dorfseite und mit Aussicht auf die Gratlspritz? Egal wofür du dich <br>
-                    entscheidest: Wir geben deinem Urlaub eine Heimat bei uns im Alpbacherhof. Heißt es für dich: <br>
+                    Großzügig geschnitten, wachgeküsst von der Sonne und dem Blick auf die Berge? Oder doch 
+                    lieber kuschelig, auf der Dorfseite und mit Aussicht auf die Gratlspritz? Egal wofür du dich 
+                    entscheidest: Wir geben deinem Urlaub eine Heimat bei uns im Alpbacherhof. Heißt es für dich:
                     Du fühlst dich genauso wohl wie in deinen eigenen vier Wänden.
                 </h2>
             </div>                
-                <div class="flex flex-row justify-evenly">
-                    <div>
+                <div class="flex flex-row justify-between">
+                    
                         <button data-category="-1" class="ds-button-white-filter ds-button-white">
                             Alle
-                        </button>
-                    </div>
-                    <div>
+                        </button>                   
+                    
                         <button data-category="1" class="ds-button-white-filter ds-button-white">
                             Doppelzimmer
                         </button>
-                    </div>
-                    <div>
                         <button class="ds-button-white-filter ds-button-white">
                             Einzelzimmer
                         </button class="ds-button-white-filter ds-button-white">
-                    </div>
-                    <div>
                         <button class="ds-button-white-filter ds-button-white">
                             Familienzimmer
                         </button>
-                    </div>
-                    <div>
                         <button class="ds-button-white-filter ds-button-white">
                             Suite
                         </button>
-                    </div>
                 </div>
-            </div> 
+            </div>  
         </section>
         <section class="ds-section ds-section--rooms bg-brand-white pb-[158px]">
             <div class="container mx-auto">
-                <div class="grid grid-cols-2 gap-[98px]">
+                <div class="grid grid-cols-2 gap-x-[98px] gap-y-[108px]">
                     <!--Room Card-->
-                    <div class="text-center text-brand-gray-dark mb-[108px]
+                    <div class="text-center text-brand-gray-dark
                     room-cards" data-category="1">
                     <div class="relative group">
                         <img src="suitepanorama.png" alt="Panorama Suite"
@@ -122,8 +120,8 @@
                         <p class="font-sans text-[18px]
                                   font-medium leading-[30px]
                                   tracking-[0.9px] mb-[20px]">
-                            Großzügig und unendlich frei. Schlafzimmer, gemütliches<br>
-                            Wohnzimmer, großzügiges Badezimmer und ein traumhafter<br>
+                            Großzügig und unendlich frei. Schlafzimmer, gemütliches
+                            Wohnzimmer, großzügiges Badezimmer und ein traumhafter
                             Balkon. Genieße den atemberaubenden, freien Blick in die Natur.
                         </p>
                         <p class="font-sans text-[18px]
@@ -137,7 +135,9 @@
                         </p>
                         <a href="#"
                            class="underline decoration-brand-green
+                                  mt-[20px] underline-offset-4
                                   text-brand-green text-[14px]
+                                  block
                                   font-semibold leading-[20px]
                                   tracking-[2.8px] uppercase
                                   hover:decoration-brand-yellow transition
@@ -193,6 +193,7 @@
                         <a href="#"
                            class="underline decoration-brand-green
                                   text-brand-green text-[14px]
+                                  block mt-[20px] underline-offset-4
                                   font-semibold leading-[20px]
                                   tracking-[2.8px] uppercase
                                   hover:decoration-brand-yellow transition
@@ -248,6 +249,8 @@
                         <a href="#"
                            class="underline decoration-brand-green
                                   text-brand-green text-[14px]
+                                  block mt-[20px]
+                                  underline-offset-4
                                   font-semibold leading-[20px]
                                   tracking-[2.8px] uppercase
                                   hover:decoration-brand-yellow transition
@@ -306,6 +309,7 @@
                            class="underline decoration-brand-green
                                   text-brand-green text-[14px]
                                   font-semibold leading-[20px]
+                                  block mt-[20px] underline-offset-4
                                   tracking-[2.8px] uppercase
                                   hover:decoration-brand-yellow transition
                                   hover:text-brand-yellow duration-500 ease-in">
