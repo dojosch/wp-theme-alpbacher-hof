@@ -10,6 +10,7 @@ module.exports = {
       'brand-yellow-light': 'rgba(211, 162, 0, 1)',
       'brand-black': '#000000',
       'brand-white': '#ffffff',
+      'brand-transparent': 'transparent',
     },
     fontFamily: {
 			'sans': ['Quicksand', 'sans-serif'],
