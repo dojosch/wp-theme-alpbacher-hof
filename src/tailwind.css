@@ -7,6 +7,6 @@
 }
 
 .ds-button-yellow {
-    @apply uppercase text-brand-white bg-brand-yellow border-[1px] rounded-[5px] items-center justify-center py-[5px] px-[15px] gap-[10px];
+    @apply uppercase text-brand-white bg-brand-yellow border-[1px] rounded-[5px] py-[5px] px-[15px] gap-[10px];
     @apply hover:text-brand-yellow hover:bg-brand-white hover:border-brand-yellow hover:duration-500;
 }

@@ -10,12 +10,10 @@
     </head>
     <body>
         <!-- Footer section 1 -->
-            <section class="ds-section ds-section--footer">
-                <div class="container mx-auto h-[300px] pt-[80px]">
-                    <div class="flex flex-row justify-between items-start bg-brand-white text-brand-green font-sans"> 
-                        <div>
-                            <h1 class="font-medium text-[45px]">Kontakt</h1>
-                        </div>
+            <footer class="ds-section ds-section--footer">
+                <div class="container mx-auto min-h-[300px] pt-[80px]">
+                    <div class="flex flex-row justify-between items-start bg-brand-white text-brand-green font-sans">
+                        <h1 class="font-medium text-[45px]">Kontakt</h1>
                         <div class="ml-[80px]">
                             <p class="font-medium text-[18px] text-left tracking-[0.9px] leading-[30px] ">
                                 Alpbacherhof - Mountain & Spa Resort</br>
@@ -27,16 +25,23 @@
                         </div>
                         
         
-                        <div class="ml-auto font-semibold pb-[3px] underline tracking-[2.8px] leading-[20px] text-[14px] text-right uppercase ml-auto">
-                            <div class="mb-[33px] hover:text-brand-yellow underline duration-500">
-                                <a href="" >Impressum</a>
-                            </div>
-                            <div class="mb-[33px] hover:text-brand-yellow underline duration-500">
-                                <a href="">Datenschutz</a>
-                            </div>
-                            <div class="hover:text-brand-yellow underline duration-500">
-                                <a href="">Buchungsinfos</a>
-                            </div>
+                        <div class="flex flex-col ml-auto font-semibold pb-[3px] underline underline-offset-1 tracking-[2.8px] leading-[20px] text-[14px] text-right uppercase ml-auto">
+                                <a 
+                                href=""
+                                class="mb-[33px] hover:text-brand-yellow duration-500">
+                                Impressum
+                                </a>
+                                <a 
+                                href=""
+                                class="mb-[33px] hover:text-brand-yellow duration-500"
+                                >
+                                Datenschutz
+                                </a>
+                                <a 
+                                href=""
+                                class="mb-[33px] hover:text-brand-yellow duration-500">
+                                Buchungsinfos
+                                </a>
                         </div>
                     </div>
                 </div> 
@@ -44,20 +49,20 @@
                 <!-- Footer section 2 -->
                 <div class="flex flex-row justify-between bg-brand-green text-brand-white h-[100px] p-4">
                     <!-- 1. group-->
-                    <div class="flex flex-row text-center items-center ml-[70px]">
-                        <div>
+                    <div class="flex flex-row text-center items-center underline underline-offset-1 ml-[70px] gap-x-[56px]">
+                        
                             <a href=""
-                               class="hover:text-brand-yellow duration-500 underline mr-[56px]"
+                               class="hover:text-brand-yellow duration-500 uppercase"
                             >Gutscheine</a>
 
                             <a href=""
-                               class="hover:text-brand-yellow duration-500 underline mr-[56px]"
+                               class="hover:text-brand-yellow duration-500 uppercase"
                             >FAQ</a>
 
                             <a href=""
-                               class="hover:text-brand-yellow duration-500 underline"
+                               class="hover:text-brand-yellow duration-500 uppercase"
                             >Blog</a>
-                        </div>
+
                     </div>
                 
                     <!-- 2. group -->
@@ -102,6 +107,6 @@
                             />
                     </div>
                 </div>
-            </section>
+            </footer>
     </body>
 </html>
