@@ -38,24 +38,75 @@
         </script>
     </head>
     <body>
-        <section class="ds-section ds-section--sectionname text-brand-green-light py-[144px]">
-            <div class="container mx-auto">
+        <section class="ds-section ds-section--faqs text-brand-green-light py-[144px]">
+            <div class="container mx-auto divide-y divide-brand-green">
                 <h1 class="text-center text-[70px] 
                            font-normal leading-[70px]
+                           mb-[70px]
                            font-serif text-brand-green">
                     Alles inklusive
                 </h1>
-                <div class="dropdown relative inline-block m-[10px] w-full">
+                <div class="dropdown relative inline-block w-full
+                             divide-brand-green border-solid">
                     <button class="dropdown-toggle py-[24px]
-                    border-solid  border-brand-green
-                    border-x-0 border-y-2 cursor-pointer
                     bg-brand-white uppercase font-sans
                     tracking-[3px] font-medium text-[20px]
-                    text-brand-green text-left
+                    text-brand-green text-left flex justify-between
                     w-full">
-                        Kulinarik <span class="caret ml-[10px] transition transform duration-[0.3s]">&#9660;</span>
+                        Kulinarik <span class="caret text-brand-green
+                                               tracking-[3px] text-[30px]
+                                               leading-[28px] uppercase font-normal">+</span>
                     </button>
                     <div class="dropdown-content
+                                hidden text-brand-gray-dark
+                                py-[10px]
+                                border-solid border-x-0
+                                bg-brand-white z-10 border-brand-green ">
+                        <p class="text-brand-green font-bold tex[18px]">
+                            Unsere Rundum-Verwöhnungspension:
+                        </p>
+                            <br>
+                        <ul class="list-disc text-brand-green pl-[30px]
+                                   text-[14px] font-medium leading-[25px]
+                                   mb-[10px]"
+                                   >
+                            <li>Schlemmerfrühstück von 7.30 bis 10.30 Uhr</li>
+                            <li>Mittags- & Nachmittagsjause von 13.00 bis 16.30 Uhr</li>
+                            <li>6-Gang-Menü am Abend von 18.30 bis 21.00 Uhr</li>
+                        </ul>
+                        <p class="text-brand-green font-bold tex[18px]">
+                            Noch mehr Schmankerl:
+                        </p>
+                        <ul class="list-disc text-brand-green pl-[30px]
+                                   text-[14px] font-medium leading-[25px]
+                                   mb-[10px]"
+                                   >
+                            <li>Säfte und Wasser gibt's gratis von 13.00 bis 16.30 Uhr an unserer Saftbar</li>
+                            <li>Öfter mal was Neues: wöchetnlich variierende Themenabende, wie Spezialitätenabend
+                                oder Strudelabend
+                            </li>
+                            <li>
+                                Einmal wöchentlich: Spaghetti mit Trüffel aus dem Parmesanlaib, frisch am Buffet
+                                zubereitet
+                            </li>
+                            <li>
+                                Fachkundige Beratung für den gepflegten Weingenuss durch unseren Sommelier
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown relative inline-block w-full">
+                    <button class="dropdown-toggle py-[24px]
+                     cursor-pointer
+                    bg-brand-white uppercase font-sans
+                    tracking-[3px] font-medium text-[20px]
+                    text-brand-green text-left flex justify-between
+                    w-full">
+                        Wellness & Beauty <span class="caret text-brand-green
+                        tracking-[3px] text-[30px]
+                        leading-[28px] uppercase font-normal">+</span>
+                    </button>
+                    <div class="dropdown-content py-[10px]
                                 hidden text-brand-gray-dark
                                 border-solid border-x-0
                                 bg-brand-white z-10 border-brand-green ">
@@ -92,17 +143,18 @@
                         </ul>
                     </div>
                 </div>
-                <div class="dropdown relative inline-block m-[10px] w-full">
+                <div class="dropdown relative inline-block w-full">
                     <button class="dropdown-toggle py-[24px]
-                    border-solid  border-brand-green
-                    border-x-0 border-y-2 cursor-pointer
+                     cursor-pointer
                     bg-brand-white uppercase font-sans
                     tracking-[3px] font-medium text-[20px]
-                    text-brand-green text-left
+                    text-brand-green text-left flex justify-between
                     w-full">
-                        Wellness & Beauty <span class="caret ml-[10px] transition transform duration-[0.3s]">&#9660;</span>
+                        Wandern <span class="caret text-brand-green
+                        tracking-[3px] text-[30px]
+                        leading-[28px] uppercase font-normal">+</span>
                     </button>
-                    <div class="dropdown-content
+                    <div class="dropdown-content py-[10px]
                                 hidden text-brand-gray-dark
                                 border-solid border-x-0
                                 bg-brand-white z-10 border-brand-green ">
@@ -139,17 +191,18 @@
                         </ul>
                     </div>
                 </div>
-                <div class="dropdown relative inline-block m-[10px] w-full">
+                <div class="dropdown relative inline-block  w-full">
                     <button class="dropdown-toggle py-[24px]
-                    border-solid  border-brand-green
-                    border-x-0 border-y-2 cursor-pointer
+                    cursor-pointer
                     bg-brand-white uppercase font-sans
                     tracking-[3px] font-medium text-[20px]
-                    text-brand-green text-left
+                    text-brand-green text-left flex justify-between
                     w-full">
-                        Wandern <span class="caret ml-[10px] transition transform duration-[0.3s]">&#9660;</span>
+                        Aktivprogramm <span class="caret text-brand-green
+                        tracking-[3px] text-[30px]
+                        leading-[28px] uppercase font-normal">+</span>
                     </button>
-                    <div class="dropdown-content
+                    <div class="dropdown-content py-[10px]
                                 hidden text-brand-gray-dark
                                 border-solid border-x-0
                                 bg-brand-white z-10 border-brand-green ">
@@ -186,17 +239,19 @@
                         </ul>
                     </div>
                 </div>
-                <div class="dropdown relative inline-block m-[10px] w-full">
+                <div class="dropdown relative 
+                    border-brand-green border-solid">
                     <button class="dropdown-toggle py-[24px]
-                    border-solid  border-brand-green
-                    border-x-0 border-y-2 cursor-pointer
+                    cursor-pointer 
                     bg-brand-white uppercase font-sans
                     tracking-[3px] font-medium text-[20px]
-                    text-brand-green text-left
+                    text-brand-green text-left flex justify-between
                     w-full">
-                        Aktivprogramm <span class="caret ml-[10px] transition transform duration-[0.3s]">&#9660;</span>
+                        Sonstiges <span class="caret text-brand-green
+                        tracking-[3px] text-[30px]
+                        leading-[28px] uppercase font-normal ">+</span>
                     </button>
-                    <div class="dropdown-content
+                    <div class="dropdown-content py-[10px]
                                 hidden text-brand-gray-dark
                                 border-solid border-x-0
                                 bg-brand-white z-10 border-brand-green ">
@@ -232,53 +287,9 @@
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
-                <div class="dropdown relative inline-block m-[10px] w-full">
-                    <button class="dropdown-toggle py-[24px]
-                    border-solid  border-brand-green
-                    border-x-0 border-y-2 cursor-pointer
-                    bg-brand-white uppercase font-sans
-                    tracking-[3px] font-medium text-[20px]
-                    text-brand-green text-left
-                    w-full">
-                        Sonstiges <span class="caret ml-[10px] transition transform duration-[0.3s]">&#9660;</span>
-                    </button>
-                    <div class="dropdown-content
-                                hidden text-brand-gray-dark
-                                border-solid border-x-0
-                                bg-brand-white z-10 border-brand-green ">
-                        <p class="text-brand-green font-bold tex[18px]">
-                            Unsere Rundum-Verwöhnungspension:
-                        </p>
-                            <br>
-                        <ul class="list-disc text-brand-green pl-[30px]
-                                   text-[14px] font-medium leading-[25px]
-                                   mb-[10px]"
-                                   >
-                            <li>Schlemmerfrühstück von 7.30 bis 10.30 Uhr</li>
-                            <li>Mittags- & Nachmittagsjause von 13.00 bis 16.30 Uhr</li>
-                            <li>6-Gang-Menü am Abend von 18.30 bis 21.00 Uhr</li>
-                        </ul>
-                        <p class="text-brand-green font-bold tex[18px]">
-                            Noch mehr Schmankerl:
-                        </p>
-                        <ul class="list-disc text-brand-green pl-[30px]
-                                   text-[14px] font-medium leading-[25px]
-                                   mb-[10px]"
-                                   >
-                            <li>Säfte und Wasser gibt's gratis von 13.00 bis 16.30 Uhr an unserer Saftbar</li>
-                            <li>Öfter mal was Neues: wöchetnlich variierende Themenabende, wie Spezialitätenabend
-                                oder Strudelabend
-                            </li>
-                            <li>
-                                Einmal wöchentlich: Spaghetti mit Trüffel aus dem Parmesanlaib, frisch am Buffet
-                                zubereitet
-                            </li>
-                            <li>
-                                Fachkundige Beratung für den gepflegten Weingenuss durch unseren Sommelier
-                            </li>
-                        </ul>
-                    </div>
+                <div>
                 </div>
             </div> 
         </section>
