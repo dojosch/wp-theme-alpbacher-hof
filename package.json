@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "aos": "^2.3.4",
     "live-server": "^1.2.2",
     "tailwind": "^4.0.0"
   },
