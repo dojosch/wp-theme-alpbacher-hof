@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="de">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +9,25 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section class="ds-section ds-section--two-col-image-text-link bg-brand-white py-[100px]">
+        <section class="ds-section ds-section--two-col-image-text-link bg-brand-white py-[100px] px-[20px]">
             <div class="container mx-auto">
-                <div class="flex flex-row justify-between gap-[20px]">
+                <div class="flex flex-col lg:flex-row justify-between gap-[20px]">
                     <div>
-                        <h1 class="font-sans text-[45px]
-                                   font-medium leading-[55px]
-                                   ml-[20px]
+                        <h1 class="font-sans text-[38px] lg:text-[45px]
+                                   font-medium leading-[55px] text-center lg:text-left
+                                   ml-[20px] hyphens-auto
                                    tracking-[2.25px] text-brand-green mb-[20px]">
                             Aktiv & Abwechslungsreich
                         </h1>
-                        <p class="text-[18px] font-medium ml-[20px]
-                                  leading-[30px] tracking-[0.9px]
+                        <p class="text-[16px] font-medium ml-[20px] lg:text-[18px]
+                                  leading-[30px] tracking-[0.9px] text-center lg:text-left
                                   text-brand-gray-dark mb-[20px]">
                             Auf zu Almen, Gipfeln, Seen und Wiesen!
                             Der Sommer ruft, kannst du ihn hören?
                         </p>
                         <a href="#" class="text-[14px] font-sans
-                                           text-brand-green
-                                           ml-[20px]
+                                           text-brand-green text-center block
+                                           ml-[20px] lg:text-left
                                            font-semibold leading-[20px]
                                            tracking-[2.8px] uppercase
                                            underline underline-current
@@ -36,19 +36,18 @@
                                            transition duration-500">
                             alpbachtal im Sommer
                         </a>
-                        <img src="picture-sommer-left.png" alt="Image">
+                        <img src="picture-sommer-left.png" class="mx-auto lg:mx-0" alt="Image">
                     </div>
-                    <div class="mt-[130px]">
-
-                        <img src="picture-winter-right.png" alt="Image">
-                        <div class="ml-[20px]">
-                        <h1 class="font-sans text-[45px]
-                        font-medium leading-[55px]
+                    <div class="lg:mt-[130px] mt-[50px] ">
+                        <img src="picture-winter-right.png" class="mx-auto lg:mx-0" alt="Image">
+                        <div class="ml-[20px] hyphens-auto">
+                        <h1 class="font-sans text-[38px] lg:text[45px]
+                        font-medium leading-[55px] text-center lg:text-left
                         tracking-[2.25px] text-brand-green mb-[20px]">
                             Winterwonderland
                         </h1>
-                        <p class="text-[18px] font-medium
-                        leading-[30px] tracking-[0.9px]
+                        <p class="text-[16px] font-medium lg:text-[18px]
+                        leading-[30px] tracking-[0.9px] text-center lg:text-left
                         text-brand-gray-dark mb-[20px]">
                             Pistengaudi und Schneegestöber! Ein Winterurlaub
                             in Tirol, wie er im Bilderbuche steht!
@@ -58,9 +57,10 @@
                                            text-brand-green
                                            tracking-[2.8px] uppercase
                                            underline underline-current
-                                           underline-offset-4
+                                           underline-offset-4 b
                                            hover:text-brand-yellow
-                                           transition duration-500">
+                                           transition duration-500
+                                           lg:text-left text-center block">
                             Alpbachtal im Winter
                         </a>
                         </div>
