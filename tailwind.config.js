@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     colors: {
       'brand-green': '#585943',
-      'brand-green-light': 'rgba(88, 89, 67, 1)',
+      'brand-green-light': 'rgba(88, 89, 67, 0.1)',
       'brand-yellow': 'rgba(211, 162, 0)',
-      'brand-yellow-light': 'rgba(211, 162, 0, 1)',
+      'brand-yellow-light': 'rgba(211, 162, 0, 0.1)',
       'brand-black': '#000000',
       'brand-white': '#ffffff',
     },
