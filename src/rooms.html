@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="de">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,17 +44,16 @@
         </script>
     </head>
     <body>
-        <section class="ds-section ds-section--rooms bg-brand-green py-[100px] mb-[118px]">
+        <section class="ds-section ds-section--rooms bg-brand-green py-[100px] mb-[118px] px-[20px]">
             <div class="mx-auto container">
-
-            <div class="text-left">
-                <h1 class="text-[35px] font-medium
+            <div class="text-center lg:text-left">
+                <h1 class="text-[30px] font-medium lg:text-[35px]
                            leading-[45px] tracking-[1.75px]
                            text-brand-white
                            mb-[40px]">
                     Finde dein Lieblingszimmer
                 </h1>
-                <h2 class="font-sans text-[18px]
+                <h2 class="font-sans text-[16px] lg:text-[18px]
                            font-medium leading-[30px]
                            tracking-[0.9px] text-brand-white
                            mb-[40px]">
@@ -64,12 +63,10 @@
                     Du fühlst dich genauso wohl wie in deinen eigenen vier Wänden.
                 </h2>
             </div>                
-                <div class="flex flex-row justify-between">
-                    
+                <div class="flex flex-col gap-[15px] lg:flex-row lg:gap-[10px] justify-between">                 
                         <button data-category="-1" class="ds-button-white-filter ds-button-white">
                             Alle
-                        </button>                   
-                    
+                        </button>                                       
                         <button data-category="1" class="ds-button-white-filter ds-button-white">
                             Doppelzimmer
                         </button>
@@ -85,9 +82,9 @@
                 </div>
             </div>  
         </section>
-        <section class="ds-section ds-section--rooms bg-brand-white pb-[158px]">
+        <section class="ds-section ds-section--rooms bg-brand-white pb-[158px] px-[20px]">
             <div class="container mx-auto">
-                <div class="grid grid-cols-2 gap-x-[98px] gap-y-[108px]">
+                <div class="grid grid-cols-1 gap-y-[50px] lg:grid-cols-2 lg:gap-x-[98px] lg:gap-y-[108px]">
                     <!--Room Card-->
                     <div class="text-center text-brand-gray-dark
                     room-cards" data-category="1">
@@ -105,26 +102,26 @@
                             </div>
                     </div>
                         
-                        <h2 class="font-sans text-[20px]
+                        <h2 class="font-sans text-[18px] lg:text-[20px]
                                     font-medium uppercase
                                     leading-[28px] tracking-[3px]">
                             suite Panorama
                         </h2>
-                        <h1  class="text-sans text-[45px]
+                        <h1  class="text-sans text-[38px] lg:text-[45px]
                                     font-medium leading-[55px]
                                     tracking-[2.25px] mb-[40px]
                                     uppercase">
                             suite panorama 
                             
                         </h1>
-                        <p class="font-sans text-[18px]
+                        <p class="font-sans text-[16px] lg:text-[18px]
                                   font-medium leading-[30px]
                                   tracking-[0.9px] mb-[20px]">
                             Großzügig und unendlich frei. Schlafzimmer, gemütliches
                             Wohnzimmer, großzügiges Badezimmer und ein traumhafter
                             Balkon. Genieße den atemberaubenden, freien Blick in die Natur.
                         </p>
-                        <p class="font-sans text-[18px]
+                        <p class="font-sans text-[16px] lg:text-[18px]
                                   font-bold">
                             44 m² | bis zu 2 Person(en) | ab € 216 
                         </p>
@@ -147,7 +144,7 @@
                     </div>
                     <!--Room Card End-->
                     <!--Room Card-->
-                    <div class="text-center text-brand-gray-dark mb-[108px]
+                    <div class="text-center text-brand-gray-dark
                     room-cards" data-category="1">
                     <div class="relative group">
                         <img src="familiensuitepanorama.png" alt="Panorama Suite"
@@ -163,18 +160,18 @@
                         </div>
                     </div>
                        
-                        <h2 class="font-sans text-[20px]
+                        <h2 class="font-sans text-[18px] lg-text-[20px]
                                     font-medium uppercase
                                     leading-[28px] tracking-[3px]">
                                 Familiensuite Panorama
                         </h2>
-                        <h1  class="text-sans text-[45px]
+                        <h1  class="text-sans text-[38px] lg:text-[45px]
                                     font-medium leading-[55px]
                                     tracking-[2.25px] mb-[40px]
                                     uppercase">
                                 Familiensuite Panorama
                         </h1>
-                        <p class="font-sans text-[18px]
+                        <p class="font-sans text-[16px] lg:Text-[18px]
                                   font-medium leading-[30px]
                                   tracking-[0.9px] mb-[20px]">
                                 Familienzeit trifft auf Privatsphäre. Die charmante Familiensuite<br>
@@ -204,7 +201,7 @@
                     <!--Room Card End-->
                     <!--Room Card-->
                     <div class="text-center text-brand-gray-dark
-                    room-cards">
+                    room-cards max-w-full">
                     <div class="relative group">
                         <img src="wohnkomfortzirbe.png" alt="Panorama Suite"
                         class="mb-[57px] block mx-auto w-full h-full object-cover">
@@ -217,17 +214,16 @@
                                 Buchen
                             </button>
                         </div>
-                    </div>
-                       
-                        <h2 class="font-sans text-[20px]
+                    </div>                      
+                        <h2 class="font-sans text-[18px] lg:text-[20px]
                                     font-medium uppercase
                                     leading-[28px] tracking-[3px]">
                                 WOHNKOMFORTZIMMER ZIRBE
                         </h2>
-                        <h1  class="text-sans text-[45px]
+                        <h1  class="text-sans text-[38px] lg:text-[45px]
                                     font-medium leading-[55px]
                                     tracking-[2.25px] mb-[40px]
-                                    uppercase">
+                                    uppercase hyphens-auto">
                                 WOHNKOMFORTZIMMER <br> ZIRBE
                         </h1>
                         <p class="font-sans text-[18px]
@@ -261,8 +257,7 @@
                     <!--Room Card End-->
                     <!--Room Card-->
                     <div class="text-center text-brand-gray-dark
-                    room-cards">
-
+                    room-cards max-w-full">
                         <div class="relative group">
                             <img src="doppelzimmerdeluxe.png" alt="Panorama Suite"
                             class="mb-[57px] block mx-auto w-full h-full object-cover">
@@ -277,26 +272,26 @@
                             </div>
                         </div>
                        
-                        <h2 class="font-sans text-[20px]
+                        <h2 class="font-sans text-[18px] lg:text-[20px]
                                     font-medium uppercase
                                     leading-[28px] tracking-[3px]">
                                     DOPPELZIMMER DELUXE
                         </h2>
-                        <h1  class="text-sans text-[45px]
+                        <h1  class="text-sans text-[38px] lg:text-[45px]
                                     font-medium leading-[55px]
                                     tracking-[2.25px] mb-[40px]
-                                    uppercase">
+                                    uppercase hyphens-auto">
                                     Wohnkomfortzimmer <br>
                                     Naturblick
                         </h1>
-                        <p class="font-sans text-[18px]
+                        <p class="font-sans text-[16px] lg:text-[18px]
                                   font-medium leading-[30px]
                                   tracking-[0.9px] mb-[20px]">
                                   Natürlichkeit und Luxus. In perfekter Harmonie. Morgens küsst<br>
                                   dich die Sonne wach. Abends schläfst du mit Blick auf das<br>
                                   Bergpanorama ein. Ein Gefühl von tiefster Geborgenheit.
                         </p>
-                        <p class="font-sans text-[18px]
+                        <p class="font-sans text-[16px] lg:text-[18px]
                                   font-bold">
                                 44 m² | bis zu 3 Person(en) | ab € 198 
                         </p>
@@ -318,7 +313,6 @@
                     </div>
                     <!--Romm Card End-->
                 </div>
-
             </div>
         </section>
     </body>

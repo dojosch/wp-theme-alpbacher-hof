@@ -3,6 +3,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    
     colors: {
       'brand-green': '#585943',
       'brand-green-light': 'rgba(88, 89, 67, 1)',
@@ -18,6 +19,7 @@ module.exports = {
 			'serif': ['DM Serif Display', 'serif'],
       'hand': ['Arial', 'sans'], //TODO
 		},
-  },
-}
+    },
+};
+
 

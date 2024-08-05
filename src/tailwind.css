@@ -7,7 +7,7 @@
     text-[14px] font-semibold
     leading-[20px] tracking-[2.8px]
     uppercase py-[10px]
-    px-[50px] border 
+    px-[30px] lg:px-[50px] border 
     border-brand-white rounded-[5px]
     hover:bg-brand-white transition
     hover:text-brand-green duration-500;
@@ -18,7 +18,7 @@
     text-[14px] font-semibold
     leading-[20px] tracking-[2.8px]
     uppercase py-[10px]
-    px-[50px] border 
+    px-[30px] lg:px-[50px] border 
     border-brand-yellow rounded-[5px]
     bg-brand-yellow 
     hover:bg-brand-transparent
