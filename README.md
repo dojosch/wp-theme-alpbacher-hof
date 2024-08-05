@@ -1,4 +1,3 @@
-# Praktikum 2024 - Demo-Projekt
 
 Run the tailwind watcher to recompile on CSS changes
 ```
