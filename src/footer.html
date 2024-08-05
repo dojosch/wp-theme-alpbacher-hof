@@ -10,22 +10,22 @@
     </head>
     <body>
         <!-- Footer section 1 -->
-            <footer class="ds-section ds-section--footer">
-                <div class="container mx-auto min-h-[300px] pt-[80px]">
-                    <div class="flex flex-row justify-between items-start bg-brand-white text-brand-green font-sans">
-                        <h1 class="font-medium text-[45px]">Kontakt</h1>
-                        <div class="ml-[80px]">
-                            <p class="font-medium text-[18px] text-left tracking-[0.9px] leading-[30px] ">
-                                Alpbacherhof - Mountain & Spa Resort</br>
-                                Alpbach 279</br>
-                                6236 Alpach</br>
-                                E-Mail: hotel@alpacherhof.at</br>   
-                                Tel.: +43 5336 5237
+            <footer class="ds-section ds-section--footer px-[20px]">
+                <div class="container mx-auto min-h-[300px]  lg:pt-[80px] ">
+                    <div class="flex lg:flex-row flex-col justify-center items-center sm:justify-between bg-brand-white text-brand-green font-sans sm:items-start sm:ml-[70px]">
+                        <h1 class="font-medium text-[38px] lg:text-[45px]">Kontakt</h1>
+                        <div class="lg:ml-[80px]">
+                            <p class="flex flex-col font-medium text-[16px] lg:text-[18px] text-center sm:text-left tracking-[0.9px] leading-[30px] ">
+                                <span class="block">Alpbacherhof - Mountain & Spa Resort</span>
+                                <span class="block">Alpbach 279</span>
+                                <span class="block">6236 Alpach</span>
+                                <span class="block">E-Mail: hotel@alpacherhof.at</span>
+                                <span class="block">Tel.: +43 5336 5237</span>
                             </p>
                         </div>
                         
         
-                        <div class="flex flex-col font-semibold pb-[3px] underline underline-offset-1 tracking-[2.8px] leading-[20px] text-[14px] text-right uppercase ml-auto">
+                        <div class="flex flex-col font-semibold pb-[3px] underline underline-offset-1 tracking-[2.8px] leading-[20px] text-[14px] text-center sm:text-left lg:text-right uppercase lg:ml-auto mt-[20px] lg:mt-[0px]">
                                 <a 
                                 href=""
                                 class="mb-[33px] hover:text-brand-yellow duration-500">
@@ -47,9 +47,9 @@
                 </div> 
 
                 <!-- Footer section 2 -->
-                <div class="flex flex-row justify-between bg-brand-green text-brand-white h-[100px] p-4">
+                <div class="flex lg:flex-row flex-col lg:justify-between bg-brand-green text-brand-white min-h-[100px] py-4">
                     <!-- 1. group-->
-                    <div class="flex flex-row text-center items-center underline underline-offset-1 ml-[70px] gap-x-[56px]">
+                    <div class="flex flex-row text-center items-center justify-center sm:justify-start underline underline-offset-1 lg:gap-x-[56px] lg:ml-[70px] gap-x-[30px] mb-[20px] lg:mt-[35px]">
                         
                             <a href=""
                                class="hover:text-brand-yellow duration-500 uppercase"
@@ -65,8 +65,10 @@
 
                     </div>
                 
-                    <!-- 2. group -->
-                    <div class="flex flex-row gap-x-[19px] items-center ml-[600px]">
+                    
+                     <div class="lg:flex lg:flex-row">
+                        <!-- 2. group -->
+                        <div class="flex flex-row lg:gap-x-[19px] gap-x-[50px] justify-center items-center mb-[20px] lg:mt-4 ">
                             <a href=""
                                class="max-w-[24px] max-h-[24px] shrink-0"
                             >
@@ -84,10 +86,10 @@
                             >
                             <img src="./pictures/ic_youtube.png"  class="hover:img-brand-yellow duration-500"/>
                             </a>
-                    </div>
+                        </div>
 
-                    <!-- 3.group -->
-                    <div class="flex flex-row items-center gap-x-[29px]">
+                        <!-- 3.group -->
+                        <div class="flex flex-row justify-center items-center sm:justify-start lg:ml-[70px] gap-x-[30px] lg:gap-x-[29px] lg:mr-[70px] ">
                             <img 
                                 src="./pictures/best_alpine_wellneshotel.png"
                                 alt="Best Alpine Wellnesshotel"
@@ -105,7 +107,9 @@
                                 alt="TVB Alpbachtal"
                                 class="max-w-[49px] max-h-[49px] shrink-0"
                             />
-                    </div>
+                        </div>
+                     </div>
+                    
                 </div>
             </footer>
     </body>
