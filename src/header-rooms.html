@@ -10,42 +10,44 @@
     </head>
     <body>
         <section class="ds-section ds-section--header-rooms bg-brand-white
-                        py-[70px]">
+                        py-[70px] px-[20px]">
             <div class="container mx-auto">
-                <div class="flex flex-row justify-evenly">
+                <div class="flex flex-col lg:flex-row lg:gap-[20px] justify-evenly">
                     <div>
                         <img src="picture-left.png" alt="Picutre-Left"
-                             class="mb-[57px]">
+                             class="mb-[57px] md:mx-auto">
                         <div>
                             <h1 class="font-serif text-brand-green
-                                       text-[70px] font-normal leading-[70px]
-                                       mb-[40px]">
+                                       text-[40px] lg:text-[70px] font-normal leading-[70px]
+                                       mb-[40px] text-center lg:text-left">
                                 Suite Panorama
                             </h1>
-                            <ul class="text-brand-green text-[18px]
-                                       font-medium leading-[30px]
-                                       tracking-[0-9px] mb-[40px]
-                                       list-disc pl-[18px]">
-                                <li>44 Quadrameter</li>
-                                <li>bis zu 2 Personen</li>
-                                <li>Balkon mit Panoramablick</li>
-                            </ul>
+                            <div class="text-center lg:text-left">
+                                <ul class="text-brand-green text-[18px]
+                                font-medium leading-[30px]
+                                tracking-[0-9px] mb-[40px]
+                                list-disc px-[18px] text-left inline-block">
+                                    <li class="t">44 Quadrameter</li>
+                                    <li>bis zu 2 Personen</li>
+                                    <li>Balkon mit Panoramablick</li>
+                                </ul>
+                            </div>    
                             <a href="#" class="text-brand-green
                                               block underline-offset-8
                                               text-[14px] font-semibold
                                               leading-[20px] tracking-[2.8px] uppercase
                                               underline underline-current
                                               hover:text-brand-yellow
-                                              transition duration-500">
+                                              transition duration-500 text-center lg:text-left">
                                 Verfügbarkeit prüfen
-                            </a>
+                        </a>
                         </div>
                     </div>
                     <div>
                         <img src="picture-right.png" alt="Picture-Right"
-                                 class="mb-[111px] mt-[170px]">
+                                 class="mb-[111px] md:mx-auto lg:mt-[170px] mt-[50px]">
                         <div class="grid grid-cols-3 text-center mx-auto
-                                    gap-x-[40x] gap-y-[48px]">
+                                    gap-x-[30x] gap-y-[48px]">
                             <div>
                                 <img src="fire.svg" alt="Fireplace"
                                      class="mb-[10px] mx-auto">
